@@ -25,6 +25,7 @@
       flex-wrap: wrap;
     }
     .article {
+      transition: all 300ms ease;
       width: 50%;
     }
     .article > div {
@@ -34,6 +35,9 @@
       .article {
         width: 25%;
       }
+    }
+    .article:hover {
+      transform: scale(1.01);
     }
   </style>
   <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
