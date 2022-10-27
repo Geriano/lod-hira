@@ -1156,7 +1156,11 @@
     var edgtfPerPageVars = {"vars":{"edgtfStickyScrollAmount":0,"edgtfHeaderTransparencyHeight":106}};
     /* ]]> */
   </script>
-</body>
 
-<!-- Mirrored from objektiv1.qodeinteractive.com/metro-gallery/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Oct 2022 06:54:17 GMT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      [...document.querySelectorAll('.edgtf-pli-image')].map(node => node.clientWidth).includes(14) && window.location.reload()
+    })
+  </script>
+</body>
 </html>
