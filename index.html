@@ -1159,7 +1159,13 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      [...document.querySelectorAll('.edgtf-pli-image')].map(node => node.clientWidth).includes(14) && window.location.reload()
+      setTimeout(() => {
+        document.querySelectorAll('.edgtf-pli-image').forEach(node => {
+          if (node.clientWidth < 20) {
+            window.location.reload()
+          }
+        })
+      },200)
     })
   </script>
 </body>
